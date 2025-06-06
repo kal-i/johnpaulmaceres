@@ -132,11 +132,12 @@ section {
 }
 
 .about-text {
+    margin-bottom: 1.25rem;
     text-align: justify;
     line-height: 2;
 }
 
-.interests {
+.about-sub-section-title {
     color: #6872A1;
     font-size: .75rem;
     font-weight: 700;
@@ -149,28 +150,28 @@ section {
 .interests-list {
     list-style: none;
     display: flex;
+    flex-wrap: wrap;
     gap: 1rem;
     margin-bottom: 2rem;
 }
+
 .interests-list li {
-    padding: 0.5rem 1rem;
+    padding: 0.75rem 1rem;
     background-color: #1E1E2F;
     border-radius: 0.5rem;
     font-size: 0.875rem;
     font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem; 
 }
 .interests-list li:hover {
-    background-color: #15B886;
-    color: #E1E6FF;
+    background-color: #9AA5CE;
+    color: #1E1E2F;
 }
-.interests-list li a {
-    text-decoration: none;
-    color: #E1E6FF;
-}
-.interests-list li a:hover {
-    color: #E1E6FF;
-}
+
 .interests-list li i {
+    background-color: transparent;
     padding-right: 0.5rem;
     color: #E1E6FF;
 }
