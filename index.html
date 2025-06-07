@@ -16,8 +16,13 @@
 
 <body>
     <nav>
-        <a href="#hero" class="brand-title">kal-i</a>
-        <ul class="nav-links">
+        <a href="#hero" class="brand-title">kali</a>
+        <div class="burger" id="burger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul class="nav-links" id="nav-links">
             <li><a href="#about">About</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#journey">Journey</a></li>
@@ -38,7 +43,7 @@
 
                     <div>
                         <a href="#contact" class="cta-button">Let's Build</a>
-                        <a href="#projects" class="cta-button">View Resume</a>
+                        <a href="#" class="cta-button">View Resume</a>
                     </div>
                 </div>
             </div>
@@ -295,43 +300,63 @@
                     Dart Frog to build the API that powered the system. That experience broaden my understanding of
                     backend concepts like routing, middleware, session handling, and authentication.
                     <br><br>
-                    Recently, I’ve been honing my backend skills by exploring Node.js with Typescript, Prisma,
-                    PostgreSQL, and Express. I’ve started building a simple server for a finance tracker app I plan to
-                    develop next - continuing that endless pursuit I started all the way back with a few lines of
-                    gibberish.
+                    Recently, I’ve been honing my backend skills by exploring Node.js with TypeScript, Prisma, PostgreSQL, 
+                    and Express, building a simple finance tracker backend server. Today, I’m rekindling my knowledge in 
+                    Java while learning Spring Boot—continuing that endless pursuit I began all the way back with a few 
+                    lines of gibberish.
                 </p>
             </div>
         </section>
 
         <section id="contact">
             <div class="base-container">
-                <h2 class="section-title">Build with me</h2>
+                <div class="centralized-content">
+                    <h2 class="section-title">Build with me</h2>
+                    <p class="contact-description">
+                        I'm open to new opportunities and collaborations, so, if you have a project in mind or just want to
+                        chitchat about software development, feel free to reach out!
+                    </p>
+                    <ul class="contact-links">
+                        <li><a href="https://github.com/kal-i"><i class="ri-github-fill"></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/john-paul-maceres/"><i class="ri-linkedin-fill"></i></a></li>
+                        <li>
+                            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=jpmaceres.tech@gmail.com" target="_blank" rel="noopener noreferrer" title="Open Gmail to send an email">
+                                <i class="ri-mail-fill"></i>
+                            </a>
+                        </li>
+                        <li><a href="https://www.facebook.com/johnpaul.maceres.20020929/"><i class="ri-facebook-fill"></i></a></li>
+                    </ul>
+                </div>
             </div>
         </section>
     </main>
 
     <footer>
-            <div>
-                <h4 class="footer-brand-title">kal-i</h4>
-                <p class="footer-text">Built with HTML & CSS.</p>
+        <div class="base-container">
+            <div class="centralized-content">
+                <h4 class="footer-brand-title">Kali</h4>
+                <p class="footer-text">Built with pure HTML & CSS.
+                    <a href="https://github.com/kal-i/johnpaulmaceres.github.io">
+                        [Source Code]
+                    </a>
+                    <br>
+                    Inspired by the design of 
+                    <a href="https://asemorales.me" target="_blank" rel="noopener noreferrer">                    
+                        Ase Morales.
+                    </a>
+                </p>
             </div>
-            <div>
-                <h4 class="footer-headline">Explore</h4>
-                <ul>
-                    <li><a href="">Resume</a></li>
-                    <li><a href="">Source code</a></li>
-                </ul>
-            </div>
-    
-            <div>
-                <p class="footer-text">The website is still underdevelopment.</p>
-    
-                <div>
-    
-                </div>
-            </div>
-
+        </div>
     </footer>
+
+    <script>
+        const burger = document.getElementById('burger');
+        const navLinks = document.getElementById('nav-links');
+
+        burger.addEventListener('click', () => {
+            navLinks.classList.toggle('show');
+        });
+    </script>
 </body>
 
 </html>
