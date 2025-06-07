@@ -137,7 +137,7 @@ section {
     line-height: 2;
 }
 
-.about-sub-section-title {
+.sub-section-title {
     color: #6872A1;
     font-size: .75rem;
     font-weight: 700;
@@ -174,6 +174,107 @@ section {
     background-color: transparent;
     padding-right: 0.5rem;
     color: #E1E6FF;
+}
+
+.project-section {
+    margin-top: 2.5rem;
+}
+
+.sub-section-description {
+    font-size: 0.875rem;
+    font-style: italic;
+    line-height: 1.625;
+    margin-bottom: 1.25rem;
+}
+
+.project-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.project-item {
+    border: 2px solid #1E1E2F;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    flex: 1 1 400px;
+    box-sizing: border-box;
+}
+
+.project-role {
+    font-size: .85rem;
+    font-weight: 600;
+    color: #E1E6FF;
+    margin-bottom: 0.5rem;
+}
+
+.project-title {
+    font-size: .85rem;
+    font-weight: 600;
+    color: #E1E6FF;
+    margin-bottom: 0.5rem;
+}
+
+.title-link {
+  color: inherit;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: transform 0.2s ease;
+  position: relative;
+}
+
+.title-link::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: currentColor;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.2s ease;
+}
+
+.title-link:hover::after {
+  transform: scaleX(1);
+}
+
+.title-link:hover {
+  transform: translateX(4px);
+}
+
+.project-date {
+    color: #6872A1;
+    font-size: .65rem;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    display: block;
+    margin-bottom: 0.95rem;
+    text-transform: uppercase;
+}
+
+.project-descriptions {
+    padding: 0 1.5rem;
+    font-size: 0.85rem;
+    line-height: 1.725;
+    margin-bottom: 1.25rem;
+}
+
+.project-tech {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.project-tech li {
+    list-style: none;
+    color: #6872A1;
+    font-size: .75rem;
+    font-weight: 700;
+    text-transform: uppercase;
 }
 
 .journey-text {
