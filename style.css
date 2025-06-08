@@ -102,15 +102,28 @@ nav {
     color: #1E1E2F;
 }
 
+.cta-button-highlighted {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background-color: #E1E6FF;
+    color: #1E1E2F;
+    border-radius: 0.375rem;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button-highlighted:hover {
+    border: 2px solid #1E1E2F;
+    background-color: #1E1E2F;
+    color: #E1E6FF;
+}
+
 section {
     padding: 4rem 2rem;
 }
 
 #hero {
-    height: 100vh;
-}
-
-#about {
     height: 100vh;
 }
 
